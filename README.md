@@ -1,8 +1,20 @@
+docker-tinyproxy
+================
 
-## Repositories
-- [GitLab repository](https://gitlab.com/kalaksi-containers/tinyproxy/) (image: `registry.gitlab.com/kalaksi-containers/tinyproxy`)
-- [Docker Hub repository](https://hub.docker.com/r/kalaksi/tinyproxy/) (image: `docker.io/kalaksi/tinyproxy`)
-- [GitHub repository](https://github.com/kalaksi/docker-tinyproxy)
+Simple way to install a tinyproxy server on an host.
+
+---
+
+# Tags
+
+| Image | Tag | Build | Latest |
+|:------------------:|:--------------:|:-----------------:|:-----------------:|
+| ghcr.io/lizenzfass78851/docker-tinyproxy | master | [![Build and Publish Docker Image](https://github.com/LizenzFass78851/docker-tinyproxy/actions/workflows/docker-image.yml/badge.svg?branch=master)](https://github.com/LizenzFass78851/docker-tinyproxy/actions/workflows/docker-image.yml) | 📌 |
+
+## Which CPU architectures are supported?
+- amd64
+- aarch64
+- armv7
 
 ## Why use this container?
 **Simply put, this container has been written with simplicity and security in mind.**
@@ -30,7 +42,7 @@ See the ```Tags``` tab on Docker Hub for specifics. Basically you have:
 - Minor versioned tags (follow Semantic Versioning), e.g. ```1.1``` which would follow branch ```1.1.x``` on GitHub.
 
 ## Configuration
-See ```Dockerfile``` and ```docker-compose.yml``` (<https://github.com/kalaksi/docker-tinyproxy>) for usable environment variables. Variables that are left empty will use default values.  
+See ```Dockerfile``` and ```docker-compose.yml``` (<https://github.com/LizenzFass78851/docker-tinyproxy>) for usable environment variables. Variables that are left empty will use default values.  
 If you need more customization, mount your own tinyproxy.conf to ```/etc/tinyproxy/tinyproxy.conf```,
 otherwise, the default tinyproxy configuration file will be used and customized according to the environment variables.
   
