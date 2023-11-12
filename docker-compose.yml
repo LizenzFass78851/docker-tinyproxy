@@ -1,6 +1,9 @@
 services:
   tinyproxy:
-    image: docker.io/kalaksi/tinyproxy
+    image: ghcr.io/lizenzfass78851/docker-tinyproxy:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
     # You can also use GitLab as an alternative to Docker Hub:
     # image: registry.gitlab.com/kalaksi-containers/tinyproxy
     restart: unless-stopped
