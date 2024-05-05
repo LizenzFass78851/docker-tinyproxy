@@ -37,7 +37,7 @@ ENV TINYPROXY_UID="57981"
 ENV TINYPROXY_GID="57981"
 
 # Curl is for healthchecks.
-RUN apt-get update && \
+RUN apt-get update && apt-get dist-upgrade -yy && \
     DEBIAN_FRONTEND=noninteractive apt-get install -y --no-install-recommends \
       tinyproxy curl && \
     apt-get clean && \
